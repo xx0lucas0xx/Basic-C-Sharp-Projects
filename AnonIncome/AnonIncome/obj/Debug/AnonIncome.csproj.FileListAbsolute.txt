@@ -1,0 +1,7 @@
+C:\Users\spike\source\repos\AnonIncome\AnonIncome\bin\Debug\AnonIncome.exe.config
+C:\Users\spike\source\repos\AnonIncome\AnonIncome\bin\Debug\AnonIncome.exe
+C:\Users\spike\source\repos\AnonIncome\AnonIncome\bin\Debug\AnonIncome.pdb
+C:\Users\spike\source\repos\AnonIncome\AnonIncome\obj\Debug\AnonIncome.csprojAssemblyReference.cache
+C:\Users\spike\source\repos\AnonIncome\AnonIncome\obj\Debug\AnonIncome.csproj.CoreCompileInputs.cache
+C:\Users\spike\source\repos\AnonIncome\AnonIncome\obj\Debug\AnonIncome.exe
+C:\Users\spike\source\repos\AnonIncome\AnonIncome\obj\Debug\AnonIncome.pdb

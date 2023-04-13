@@ -1,0 +1,7 @@
+C:\Users\spike\source\repos\MathAndComparisonOperators.cs\MathAndComparisonOperators.cs\bin\Debug\MathAndComparisonOperators.cs.exe.config
+C:\Users\spike\source\repos\MathAndComparisonOperators.cs\MathAndComparisonOperators.cs\bin\Debug\MathAndComparisonOperators.cs.exe
+C:\Users\spike\source\repos\MathAndComparisonOperators.cs\MathAndComparisonOperators.cs\bin\Debug\MathAndComparisonOperators.cs.pdb
+C:\Users\spike\source\repos\MathAndComparisonOperators.cs\MathAndComparisonOperators.cs\obj\Debug\MathAndComparisonOperators.cs.csprojAssemblyReference.cache
+C:\Users\spike\source\repos\MathAndComparisonOperators.cs\MathAndComparisonOperators.cs\obj\Debug\MathAndComparisonOperators.cs.csproj.CoreCompileInputs.cache
+C:\Users\spike\source\repos\MathAndComparisonOperators.cs\MathAndComparisonOperators.cs\obj\Debug\MathAndComparisonOperators.cs.exe
+C:\Users\spike\source\repos\MathAndComparisonOperators.cs\MathAndComparisonOperators.cs\obj\Debug\MathAndComparisonOperators.cs.pdb

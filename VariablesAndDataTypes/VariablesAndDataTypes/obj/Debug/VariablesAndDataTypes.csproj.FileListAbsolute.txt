@@ -1,0 +1,7 @@
+c:\users\spike\source\repos\VariablesAndDataTypes\VariablesAndDataTypes\bin\Debug\VariablesAndDataTypes.exe.config
+c:\users\spike\source\repos\VariablesAndDataTypes\VariablesAndDataTypes\bin\Debug\VariablesAndDataTypes.exe
+c:\users\spike\source\repos\VariablesAndDataTypes\VariablesAndDataTypes\bin\Debug\VariablesAndDataTypes.pdb
+c:\users\spike\source\repos\VariablesAndDataTypes\VariablesAndDataTypes\obj\Debug\VariablesAndDataTypes.csprojAssemblyReference.cache
+c:\users\spike\source\repos\VariablesAndDataTypes\VariablesAndDataTypes\obj\Debug\VariablesAndDataTypes.csproj.CoreCompileInputs.cache
+c:\users\spike\source\repos\VariablesAndDataTypes\VariablesAndDataTypes\obj\Debug\VariablesAndDataTypes.exe
+c:\users\spike\source\repos\VariablesAndDataTypes\VariablesAndDataTypes\obj\Debug\VariablesAndDataTypes.pdb
