@@ -1,0 +1,7 @@
+C:\Users\spike\source\repos\DailyRepo\DailyRepo\bin\Debug\DailyRepo.exe.config
+C:\Users\spike\source\repos\DailyRepo\DailyRepo\bin\Debug\DailyRepo.exe
+C:\Users\spike\source\repos\DailyRepo\DailyRepo\bin\Debug\DailyRepo.pdb
+C:\Users\spike\source\repos\DailyRepo\DailyRepo\obj\Debug\DailyRepo.csprojAssemblyReference.cache
+C:\Users\spike\source\repos\DailyRepo\DailyRepo\obj\Debug\DailyRepo.csproj.CoreCompileInputs.cache
+C:\Users\spike\source\repos\DailyRepo\DailyRepo\obj\Debug\DailyRepo.exe
+C:\Users\spike\source\repos\DailyRepo\DailyRepo\obj\Debug\DailyRepo.pdb
