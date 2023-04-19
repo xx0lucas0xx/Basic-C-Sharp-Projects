@@ -13,7 +13,8 @@ namespace loops
             Console.WriteLine("Guess a number?");
             int number = Convert.ToInt32(Console.ReadLine());
             bool isGuessed = number == 12;
-
+            
+            //makes sure the first prompt is executed and not just the while loop
             do
             {
                 switch (number)
