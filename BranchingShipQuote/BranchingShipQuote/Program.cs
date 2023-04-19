@@ -42,7 +42,8 @@ namespace BranchingShipQuote
             string length = Console.ReadLine();
             int lengthInt = Convert.ToInt32(length);
 
-            int Total = (widthInt * heightInt * lengthInt);
+            int Total = (widthInt + heightInt + lengthInt);
+            int TotalMulti = (widthInt * heightInt * lengthInt);
             
             //Checks if package is avalible to ship or not
             if (Total > 50)
@@ -51,7 +52,7 @@ namespace BranchingShipQuote
             }
             else
             {
-                double grandTotal = (Total * weightInt / 100);
+                double grandTotal = (TotalMulti * weightInt / 100);
                 Console.WriteLine("Your estimated total for shipping is: " + "$" + grandTotal);
                 Console.ReadLine();
             

@@ -20,7 +20,7 @@ namespace BoolDoWhile
             {
                 switch (num)
                 {
-                    //
+                    //goes through list of numbers until 4 is chosen
                     case 3:
                         Console.WriteLine("3? ...Seriously? ...");
                         Console.WriteLine("Guess a number?");
