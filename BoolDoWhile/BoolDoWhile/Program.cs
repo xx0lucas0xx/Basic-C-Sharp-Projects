@@ -10,6 +10,8 @@ namespace BoolDoWhile
     {
         static void Main(string[] args)
         {
+            //states that the number to be guessed is 4
+            //asks 
             Console.WriteLine("Guess a number between 1 and 4?");
             int num = Convert.ToInt32(Console.ReadLine());
             bool numNum = num == 4;
@@ -18,6 +20,7 @@ namespace BoolDoWhile
             {
                 switch (num)
                 {
+                    //
                     case 3:
                         Console.WriteLine("3? ...Seriously? ...");
                         Console.WriteLine("Guess a number?");

@@ -32,7 +32,7 @@ namespace BoolInsurance
 
             Console.WriteLine("\nDo you qualify?");
            
-            Console.WriteLine(ageInt >= 15 && tickInt <= 3 && );
+            Console.WriteLine(ageInt > 15 && tickInt <= 3 && !DUItf );
 
             Console.ReadLine();
 
