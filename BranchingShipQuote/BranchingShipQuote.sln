@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.33423.255
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BranchingShipQuote", "BranchingShipQuote\BranchingShipQuote.csproj", "{A6595D4D-4457-4388-8926-724CAAE2800F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6595D4D-4457-4388-8926-724CAAE2800F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6595D4D-4457-4388-8926-724CAAE2800F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6595D4D-4457-4388-8926-724CAAE2800F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6595D4D-4457-4388-8926-724CAAE2800F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7F5906A-D1F5-465A-888D-999B68308E7F}
+	EndGlobalSection
+EndGlobal
