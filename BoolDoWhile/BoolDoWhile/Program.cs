@@ -10,6 +10,12 @@ namespace BoolDoWhile
     {
         static void Main(string[] args)
         {
+            int i = 0;
+            while (i < 134)
+            {
+                Console.WriteLine(i);
+                i++;
+            }
             //states that the number to be guessed is 4
             //asks 
             Console.WriteLine("Guess a number between 1 and 4?");
