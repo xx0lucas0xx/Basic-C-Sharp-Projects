@@ -11,6 +11,7 @@ namespace ExceptionHandling
         static void Main(string[] args)
 
         {
+            //start of try and catch error block
             try
             {
                 //asks user for two numbers to divide them
@@ -22,12 +23,31 @@ namespace ExceptionHandling
                 int numberThree = numberOne / numberTwo;
                 Console.WriteLine(numberOne + " divided by " + numberTwo + " equals " + numberThree);
             }
+
+            //Sends an error message if anything but int is submitted
             catch (FormatException ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("Please type a whole number");
+                return;
             }
 
-            Console.ReadLine();
+            //Sends an error message if user trys to divide by 0
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine("Please don't divide by zero");
+            }
+
+            //Sends an error for any error not perviously stated
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            } 
+
+            //Continues code even if
+            finally
+            {
+                Console.ReadLine();
+            }
 
         }
     }
