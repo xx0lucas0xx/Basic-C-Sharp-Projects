@@ -16,9 +16,9 @@ class Program
         string inputAnimal = Console.ReadLine();
 
         StringBuilder sb = new StringBuilder();
-        
+
         //for loop iterates through array and adds text to end
-        for (int i = 0; i <strArray.Length; i++)
+        for (int i = 0; i < strArray.Length; i++)
         {
             sb.Append(strArray[i] + inputAnimal);
         }
@@ -30,7 +30,7 @@ class Program
         int l = 0;
 
         //while l is greater than 6, print 'You're silly'
-        while ( l < 6 )
+        while (l < 6)
         {
             Console.WriteLine("You're silly");
 
@@ -42,7 +42,7 @@ class Program
         int hia = 4;
 
         //while hia is greater than or equal to 7, print 'It has been an amazing day!
-        while (hia <= 7 )
+        while (hia <= 7)
         {
             Console.WriteLine("It has been an amazing day!");
 
@@ -53,31 +53,31 @@ class Program
 
         //initiating meal list
         List<string> meals = new List<string>() { "breakfast", "lunch", "dinner" };
-        
+
         //asks user to choose a meal
         Console.WriteLine("What's your favorite meal of the day?");
         string meal = Console.ReadLine();
 
-            //itrates through meals to see if they match user input
-            //displays input if matches an object on the list
-            if (meal == "breakfast")
-            {
-                Console.WriteLine( meal + " is your favorite meal of the day!");
-            }
-            else if (meal == "lunch")
-            {
-                Console.WriteLine(meal + " is your favorite meal of the day!");
-            }
-            else if (meal == "dinner")
-            {
-                Console.WriteLine(meal + " is your favorite meal of the day!");
-            }
-            else
-            {
+        //itrates through meals to see if they match user input
+        //displays input if matches an object on the list
+        if (meal == "breakfast")
+        {
+            Console.WriteLine(meal + " is your favorite meal of the day!");
+        }
+        else if (meal == "lunch")
+        {
+            Console.WriteLine(meal + " is your favorite meal of the day!");
+        }
+        else if (meal == "dinner")
+        {
+            Console.WriteLine(meal + " is your favorite meal of the day!");
+        }
+        else
+        {
             Console.WriteLine("You did not enter a valid meal");
-            }
-            
-            Console.ReadLine();
+        }
+
+        Console.ReadLine();
 
         //initiating colours list
         List<string> colours = new List<string>() { "red", "orange", "yellow", "green", "red", "blue", "purple", "pink", "green" };
@@ -92,14 +92,30 @@ class Program
         //displays applicable index
         Console.WriteLine(index);
 
-       
+        List<string> nums = new List<string>() { "a", "b", "c", "d", "e", "c" };
+
+        foreach (string num in nums)
+        {
+            if (nums.Count() >= 2)
+            {
+                Console.WriteLine(num + " this item is a duplicate");
+
+            }
+            else
+            {
+                Console.WriteLine(num + " this item is unique");
+            }
+            {
 
 
-        Console.ReadLine();
 
-        
+                Console.ReadLine();
 
 
+
+
+            }
+        }
     }
 }
 
