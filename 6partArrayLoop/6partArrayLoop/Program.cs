@@ -92,8 +92,10 @@ class Program
         //displays applicable index
         Console.WriteLine(index);
 
+        //initiates nums list
         List<string> nums = new List<string>() { "a", "b", "c", "d", "e", "c" };
 
+        //checks if there are duplicate items in list nums
         foreach (string num in nums)
         {
             if (nums.Count() >= 2)
