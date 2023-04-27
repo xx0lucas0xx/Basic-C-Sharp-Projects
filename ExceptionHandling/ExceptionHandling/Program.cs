@@ -25,36 +25,13 @@ namespace ExceptionHandling
 
 
 
-                for (int i = 0; i < MyNums.Count;)
+                for (int i = 0; i < MyNums.Count; i++)
                 {
                     Console.WriteLine(MyNums[i] / numberOne);
                 }
                 Console.ReadLine();
 
-
-
-                //foreach (int num in MyNums)
-                //{
-                //    while(MyNums.Count <)
-                //}
-
-
-
-
-
-
-
-
-
-
-
-
-
-                //Console.WriteLine("Pick a second number");
-                //int numberTwo = Convert.ToInt32(Console.ReadLine());
-                //Console.WriteLine("Dividing the two...");
-                //int numberThree = numberOne / numberTwo;
-                //Console.WriteLine(numberOne + " divided by " + numberTwo + " equals " + numberThree);
+              
             }
 
             //Sends an error message if anything but int is submitted
