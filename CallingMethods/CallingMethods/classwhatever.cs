@@ -9,18 +9,38 @@ namespace CallingMethods
     //creating new class
     public class Game
     {
-        //constructor setting up default properties to class Game
-        public Game()
+        //week pay method
+        public static int weekly(int x)
         {
-            //price of game and lenght of game
-            Price = 60;
-            GameTime = 40;
-
+            return x * 7;
         }
 
-        //adding class property
-        public int Price { get; set; }
-        public int GameTime { get; set; }
+        //mounth pay method
+        public static int mounthly(int y)
+        {
+            return y * 30;
+        }
+
+        //year pay method
+        public static int yearly(int z)
+        {
+            return z * 365;
+        }
+
+
+
+        ////constructor setting up default properties to class Game
+        //public Game()
+        //{
+        //    //price of game and lenght of game
+        //    Price = 60;
+        //    GameTime = 40;
+
+        //}
+
+        ////adding class property
+        //public int Price { get; set; }
+        //public int GameTime { get; set; }
 
     }
 }

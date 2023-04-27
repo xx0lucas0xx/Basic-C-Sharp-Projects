@@ -11,27 +11,24 @@ namespace CallingMethods
         static void Main(string[] args)
         {
             //asks user how many video games they want to buy
-            Console.WriteLine("Lets see how much you'd pay per week with our video game financing options!");
+            Console.WriteLine("Lets see how much you'd pay per day with our video game financing options!");
             Console.ReadLine();
 
-            Console.WriteLine("\nHow many video games would you like to purchase today?");
-            string HMGames = Console.ReadLine();
-            int IntHMGames = Convert.ToInt32(HMGames);
+            Console.WriteLine("How many games would you like to buy? (They cost 60$ each) ");
 
+            int IntHMGames = Convert.ToInt32(Console.ReadLine());
 
-            
+            //calls methods to use with user input
+    
+            Console.WriteLine(Game.weekly(IntHMGames * 60));
+
+            Console.WriteLine(Game.mounthly(IntHMGames * 60));
+
+            Console.WriteLine(Game.yearly(IntHMGames * 60));
+
+            Console.ReadLine();
         }
 
-        public int week = 1;
-        public int mounth = 4;
-        public int year = 52;
 
-        //one week method
-        public static GameWeek()
-        {
-            int weekpay = week * 
-            Console.WriteLine
-
-        }
     }
 }
