@@ -9,22 +9,25 @@ class Program
 {
     static void Main(string[] args)
     {
-        //asks for user input on opinion on candy
+        //asks for user to input an animal
         Console.WriteLine("name an animal");
         string[] strArray = new string[] { "Chocolate ", " Caramel ", " Gummies ", " Toffee ", " Gum " };
 
         string inputAnimal = Console.ReadLine();
 
-        StringBuilder sb = new StringBuilder();
 
         //for loop iterates through array and adds text to end
         for (int i = 0; i < strArray.Length; i++)
         {
-            sb.Append(strArray[i] + inputAnimal);
+            strArray[i] += inputAnimal;
         }
 
-        //writes out appeneded array
-        Console.WriteLine(sb);
+        foreach(string candy in strArray)
+        {
+            Console.WriteLine(candy);
+        }
+
+
 
         //initiating intager
         int l = 0;
@@ -60,45 +63,57 @@ class Program
 
         //itrates through meals to see if they match user input
         //displays input if matches an object on the list
-        if (meal == "breakfast")
+        if (meals.Contains(meal))
         {
-            Console.WriteLine(meal + " is your favorite meal of the day!");
-        }
-        else if (meal == "lunch")
-        {
-            Console.WriteLine(meal + " is your favorite meal of the day!");
-        }
-        else if (meal == "dinner")
-        {
-            Console.WriteLine(meal + " is your favorite meal of the day!");
+            for (int i = 0; i < meals.Count; i++)
+            {
+                if (meals[i] == meal)
+                {
+                    Console.WriteLine(meal + " is at index " + i);
+                }
+            }
         }
         else
         {
             Console.WriteLine("You did not enter a valid meal");
         }
+        
 
         Console.ReadLine();
 
         //initiating colours list
         List<string> colours = new List<string>() { "red", "orange", "yellow", "green", "red", "blue", "purple", "pink", "green" };
-
-        //asks user to choose a color
-        Console.WriteLine("what's your favorite colour?");
+        Console.WriteLine("What is your favorite colour?");
         string colour = Console.ReadLine();
 
-        //finds index of user input
-        int index = colours.FindIndex(a => a.Contains(colour));
-
-        //displays applicable index
-        Console.WriteLine(index);
+        //itrates through colours to see if they match user input
+        //displays input if matches an object on the list
+        if (colours.Contains(colour))
+        {
+            for (int i = 0; i < colours.Count; i++)
+            {
+                if (colours[i] == colour)
+                {
+                    Console.WriteLine(colour + " is at index " + i);
+                }
+            }
+        }
+        else
+        {
+            Console.WriteLine("You did not enter a valid colour");
+        }
 
         //initiates nums list
         List<string> nums = new List<string>() { "a", "b", "c", "d", "e", "c" };
 
+        //initiates empyty string
+        List<string> nums2 = new List<string>() { };
+
         //checks if there are duplicate items in list nums
         foreach (string num in nums)
         {
-            if (nums.Count() >= 2)
+            //if nums is a unique item it adds it to nums2 
+            if (nums2.Contains(num))
             {
                 Console.WriteLine(num + " this item is a duplicate");
 
@@ -106,18 +121,13 @@ class Program
             else
             {
                 Console.WriteLine(num + " this item is unique");
-            }
-            {
-
-
-
-                Console.ReadLine();
-
-
-
+                nums2.Add(num);
 
             }
+
+           
         }
+         Console.ReadLine();
     }
 }
 

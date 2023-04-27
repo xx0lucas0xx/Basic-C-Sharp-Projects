@@ -14,14 +14,47 @@ namespace ExceptionHandling
             //start of try and catch error block
             try
             {
-                //asks user for two numbers to divide them
+
+                //initiates number list
+                List<int> MyNums = new List<int>() { 4, 7, 3, 7, 4, 9, 3, 5,};
+
+
+                //asks user for a number to divide by list
                 Console.WriteLine("Pick a number");
                 int numberOne = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Pick a second number");
-                int numberTwo = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Dividing the two...");
-                int numberThree = numberOne / numberTwo;
-                Console.WriteLine(numberOne + " divided by " + numberTwo + " equals " + numberThree);
+
+
+
+                for (int i = 0; i < MyNums.Count;)
+                {
+                    Console.WriteLine(MyNums[i] / numberOne);
+                }
+                Console.ReadLine();
+
+
+
+                //foreach (int num in MyNums)
+                //{
+                //    while(MyNums.Count <)
+                //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //Console.WriteLine("Pick a second number");
+                //int numberTwo = Convert.ToInt32(Console.ReadLine());
+                //Console.WriteLine("Dividing the two...");
+                //int numberThree = numberOne / numberTwo;
+                //Console.WriteLine(numberOne + " divided by " + numberTwo + " equals " + numberThree);
             }
 
             //Sends an error message if anything but int is submitted
