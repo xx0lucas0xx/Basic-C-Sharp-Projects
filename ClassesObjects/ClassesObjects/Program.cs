@@ -38,7 +38,7 @@ namespace ClassesObjects
         {
             //adds an out
             timesShuffled = 0;
-            for (int i = 0; i < times; i++) // i < times; allows deck to be shuffled multipul times
+            for (int i = 0; i < times; i++) // i < times; allows deck to be shuffled multipule times
             {
                 //adds one every time the deck is shuffled
                 timesShuffled++;

@@ -10,6 +10,47 @@ namespace CallingMethods2
     {
         static void Main(string[] args)
         {
+            //asks user for a whole number
+            Console.WriteLine("Write a whole number");
+            int WNum = Convert.ToInt32(Console.ReadLine());
+
+            //calls methods to use with user input
+
+            Console.WriteLine(Numbers.maths(WNum));
+
+            //asks user for a decimal
+            Console.WriteLine("Write a decimal");
+            string SFNum = Console.ReadLine();
+
+            float FNum;
+
+            if(float.TryParse(SFNum, out FNum))
+            {
+                Console.WriteLine(Numbers.maths(FNum));
+            }
+
+            //asks user for string number
+
+            Console.WriteLine("Write a integer");
+            string SNum = Console.ReadLine();
+            int ISNum;
+            if (int.TryParse(SNum, out ISNum))
+            {
+                Console.WriteLine(Numbers.maths(ISNum));
+            }
+            else
+            {
+                Console.WriteLine("Invalid input, please input an integer");
+            }
+
+
+            
+            
+            
+
+
+
+            Console.ReadLine();
         }
     }
 }
