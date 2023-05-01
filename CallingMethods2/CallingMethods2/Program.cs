@@ -24,6 +24,7 @@ namespace CallingMethods2
 
             float FNum;
 
+            //converts string into a float
             if(float.TryParse(SFNum, out FNum))
             {
                 Console.WriteLine(Numbers.maths(FNum));
@@ -34,10 +35,13 @@ namespace CallingMethods2
             Console.WriteLine("Write a integer");
             string SNum = Console.ReadLine();
             int ISNum;
+
+            //converts string into int
             if (int.TryParse(SNum, out ISNum))
             {
                 Console.WriteLine(Numbers.maths(ISNum));
             }
+            //throw error if incorrect input is put in
             else
             {
                 Console.WriteLine("Invalid input, please input an integer");
