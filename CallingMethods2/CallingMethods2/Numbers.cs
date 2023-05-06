@@ -10,14 +10,14 @@ namespace CallingMethods2
     {
         //first maths method
         //adds int
-        public static int maths(int add)
+        public int maths(int add)
         {
             return add + 2300;
         }
 
         //second maths method
-        //converts float to int then subs
-        public static decimal maths(decimal sub)
+        //converts decimal to int then subs
+        public int maths(decimal sub)
         {
             int Isub = Convert.ToInt32(sub);
             return Isub - 2300;
@@ -25,10 +25,10 @@ namespace CallingMethods2
 
         //third maths method
         //converts string into int then multis
-        public static string maths(string multi)
+        public int maths(string multi)
         {
-            string Smulti = Convert.ToInt32(multi);
-            return multi * 2300;
+            int Smulti = Convert.ToInt32(multi);
+            return Smulti * 2300;
         }
 
 
