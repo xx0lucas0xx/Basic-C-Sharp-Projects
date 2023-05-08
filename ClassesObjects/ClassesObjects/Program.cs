@@ -11,10 +11,11 @@ namespace ClassesObjects
     {
         static void Main(string[] args)
         {
+
             //initiates empty list
             Deck deck = new Deck();
             //instiates the shuffle method
-            deck.Shuffle();
+            deck.Shuffle(3);
 
 
             //displays each card combo possible to display full deck amount of cards
@@ -26,13 +27,13 @@ namespace ClassesObjects
             Console.WriteLine(deck.Cards.Count);
             Console.ReadLine();
         }
-        
 
 
 
-        
 
-        //method to shuffle deck multipul times, calls prior method
+
+
+        //method to shuffle deck multiple times, calls prior method
         //public static Deck Shuffle(Deck deck, int times)
         //{
         //    for (int i = 0; i < times; i++)
@@ -40,6 +41,6 @@ namespace ClassesObjects
         //        deck = Shuffle(deck);
         //    }
         //    return deck;
-        //}
+        }
     }
 }
