@@ -10,6 +10,7 @@ namespace CallingMethods4
     {
         public void maths(int x, int y)
         {
+            //solves first int operation and prints second one untouched
             int res = x * 12;
             Console.WriteLine(res + "\nThe second integer is: " + y);
         }
