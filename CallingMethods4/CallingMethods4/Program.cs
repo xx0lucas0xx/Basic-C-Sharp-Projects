@@ -14,7 +14,7 @@ namespace CallingMethods4
             Numbers math = new Numbers();
 
             //passing in two numbers to the maths method
-            math.maths(58, 23);
+            math.maths(x: 58,y: 23);
 
             Console.ReadLine();
         }
