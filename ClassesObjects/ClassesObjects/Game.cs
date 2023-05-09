@@ -10,7 +10,7 @@ namespace ClassesObjects
     public abstract class Game
     {
         //prop tab tab making game properties
-        public List<string> Players { get; set; }
+        public List<Player> Players { get; set; }
         public string Name { get; set; }
         public string Dealer { get; set; }
 
@@ -21,9 +21,9 @@ namespace ClassesObjects
         //this virtual method gets inhereted but has ability to override it
         public virtual void ListPlayers()
         {
-            foreach (string player in Players)
+            foreach (Player player in Players)
             {
-                Console.WriteLine(player);
+                Console.WriteLine(player.Name);
             }
         }
     }
