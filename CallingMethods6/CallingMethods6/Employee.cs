@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace CallingMethods6
 {
-    class Employee : Person, IQuittable
+    public class Employee : Person, IQuittable
     {
         public int ID { get; set; }
 
+        public override void SayName()
+        {
+            Console.WriteLine(FirstName + " " + LastName);
+        }
         public void Quit()
         {
             Console.WriteLine($"{FirstName} with Employee ID {ID} has quit the company.");

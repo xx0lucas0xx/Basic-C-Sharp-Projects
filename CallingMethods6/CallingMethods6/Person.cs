@@ -12,10 +12,8 @@ namespace CallingMethods6
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public void SayName()
-        {
-            Console.WriteLine( $"Name: {FirstName} {LastName}");
-        }
+        public abstract void SayName();
+       
 
     }
 }

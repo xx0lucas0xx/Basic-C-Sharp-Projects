@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace ClassesObjects
 {
+    //naming conventions for interfaces should always start with I
     interface IWalkAway
     {
+        void WalkAway(Player player);
+        
     }
 }
