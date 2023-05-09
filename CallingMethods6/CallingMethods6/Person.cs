@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CallingMethods6
 {
-    class Person
+    //made abstract base method to be inhereted from
+    public abstract class Person
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

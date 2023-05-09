@@ -10,6 +10,7 @@ namespace CallingMethods6
     {
         static void Main(string[] args)
         {
+            //instansiates employee object
             Employee employee = new Employee();
 
             employee.FirstName = "Sample";

@@ -6,14 +6,20 @@ using System.Threading.Tasks;
 
 namespace ClassesObjects
 {
-    public class Game
+    //Base class, cannot be seen unless inherented
+    public abstract class Game
     {
-        //prop tab tab making game objects
+        //prop tab tab making game properties
         public List<string> Players { get; set; }
         public string Name { get; set; }
         public string Dealer { get; set; }
 
-        public void ListPlayers()
+        //method must have override in inhereted methods, nessesary method
+        public abstract void Play();
+
+
+        //this virtual method gets inhereted but has ability to override it
+        public virtual void ListPlayers()
         {
             foreach (string player in Players)
             {
