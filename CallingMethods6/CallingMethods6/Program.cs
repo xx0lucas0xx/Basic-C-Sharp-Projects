@@ -16,6 +16,14 @@ namespace CallingMethods6
             employee.FirstName = "Sample";
             employee.LastName = "Student";
 
+            //creating object from IQuittable and assigns it to the employee object
+            IQuittable IQuit = employee;
+
+            //calling the Quit() method
+            IQuit.Quit();
+
+            
+
             employee.SayName();
 
             Console.ReadLine();
