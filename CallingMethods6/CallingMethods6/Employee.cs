@@ -19,6 +19,16 @@ namespace CallingMethods6
             Console.WriteLine($"{FirstName} with Employee ID {ID} has quit the company.");
 
         }
+        public static bool operator ==(Employee a, Employee b)
+        {
+            //checks if two objects are equal and not null
+            return a?.ID == b?.ID;
+        }
+        public static bool operator !=(Employee a, Employee b)
+        {
+            //checks if two objects aren't equal
+            return !(a == b);
+        }
     }
     
 }
