@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ClassesObjects
 {
-    //creating new class (can reuse)
-    //best to keep one class to one file
-    public class Card
+   
+    //changed to struct (can't inharent)
+    public struct Card
     {
         //adding class property
         //public makes accessable to whole program
