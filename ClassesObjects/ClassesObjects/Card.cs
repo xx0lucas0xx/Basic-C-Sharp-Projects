@@ -15,6 +15,8 @@ namespace ClassesObjects
         public Suit Suit { get; set; }
         public Face Face { get; set; }
     }
+    
+    //adding enums (like a limited list)
     public enum Suit
     {
         Clubs,
