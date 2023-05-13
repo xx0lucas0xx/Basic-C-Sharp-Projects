@@ -8,6 +8,7 @@ namespace CallingMethods6
 {
     public class Employee : Person, IQuittable
     {
+        //adding propertys
         public int ID { get; set; }
 
         public override void SayName()

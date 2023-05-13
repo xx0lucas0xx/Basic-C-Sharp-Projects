@@ -32,17 +32,13 @@ namespace CallingMethods6
             employee3.LastName = "Student";
             employee3.ID = 3;
 
-           
-
-
-
             //creating object from IQuittable and assigns it to the employee object
             IQuittable IQuit = employee;
+
 
             //calling the Quit() method
             IQuit.Quit();
 
-            
 
             employee.SayName();
 

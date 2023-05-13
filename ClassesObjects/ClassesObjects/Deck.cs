@@ -15,23 +15,14 @@ namespace ClassesObjects
             //instantiates Cards as a empty list
             Cards = new List<Card>();
 
-            //creates two more lists and instantiates values
-            List<string> Suits = new List<string>() { "Clubs", "Hearts", "Diamonds", "Spades" };
-            List<string> Faces = new List<string>()
+            //creates a new card 52 times
+            for (int i = 0; i < 13; i++)
             {
-                "Two", "Three", "Four", "Five", "Six", "Seven",
-                "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace"
-            };
-
-            foreach (string face in Faces)
-            {
-                foreach (string suit in Suits)
+                for (int j = 0; j < 4; j++)
                 {
-                    //iterates 4 times to follow amount of values in Suits
                     Card card = new Card();
-                    card.Suit = suit;
-                    card.Face = face;
-                    //adds new card to card list
+                    card.Face = (Face)i;
+                    card.Suit = (Suit)j;
                     Cards.Add(card);
                 }
             }
