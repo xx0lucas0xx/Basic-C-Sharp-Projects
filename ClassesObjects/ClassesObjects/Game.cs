@@ -12,7 +12,7 @@ namespace ClassesObjects
         //prop tab tab making game properties
         public List<Player> Players { get; set; }
         public string Name { get; set; }
-        public string Dealer { get; set; }
+        public Dictionary<Player, int> Bets { get; set; }
 
         //method must have override in inhereted methods, nessesary method
         public abstract void Play();

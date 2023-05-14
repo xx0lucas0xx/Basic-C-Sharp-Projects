@@ -11,35 +11,33 @@ namespace ClassesObjects
     {
         static void Main(string[] args)
         {
+            //asking initaial questions
+            Console.WriteLine("Welcome to the Grand Hotel and Casino.\nLet's start by telling me your name.");
+            string playerName = Console.ReadLine();
+            Console.WriteLine("And how much money did you bring today?");
+            int bank = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Helllo, {0}. Would you like to join a game of 21 right now?", playerName);
+            string answer = Console.ReadLine().ToLower();
+            if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya")
+            {
+                Player player = new Player(playerName, bank);
+                //adding new game
+                Game game = new TwentyOneGame();
+                //adding player to the game
+                game += player;
+                player.isActivlyPlaying = true;
+                while (player.isActivlyPlaying && player.Balance > 0)
+                {
+                    game.Play();
+                }
+                //takes away player from game
+                game -= player;
+                Console.WriteLine("Thank you for playing!");
 
-            //initiates empty list
-            Deck deck = new Deck();
-
-            ////lambda function that counts the amount of aces in the deck
-            ////x represents each element in the list
-            //int count = deck.Cards.Count(x => x.Face == Face.Ace);
-
-            //List<Card> newList = deck.Cards.Where(x => x.Face == Face.King).ToList();
-
-            List<int> numberList = new List<int>() { 1, 2, 5, 8, 34, 23, 12, 9 };
-
-            int sum = numberList.Sum();
-
-            Console.WriteLine(sum);
-
-            ////instiates the shuffle method
-            //deck.Shuffle(3);
-
-
-            ////displays each card combo possible to display full deck amount of cards
-            //foreach (Card card in deck.Cards)
-            //{
-            //    Console.WriteLine(card.Face + " of " + card.Suit);
-            //}
-            ////show deck constructor is creating a cards list and adding one card to it
-            //Console.WriteLine(deck.Cards.Count);
-            Console.ReadLine();
+            }
+            Console.WriteLine("Feel free to look around the casino. Bye for now.");
+            Console.Read();
         }
 
     }
