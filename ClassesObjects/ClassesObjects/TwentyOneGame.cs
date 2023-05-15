@@ -71,6 +71,7 @@ namespace ClassesObjects
                         {
                             Dealer.Balance += entry.Value;
                         }
+                        return;
                     }
                     
                 }
@@ -105,10 +106,12 @@ namespace ClassesObjects
                         if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya")
                         {
                             player.isActivlyPlaying = true;
+                            return;
                         }
                         else
                         {
                             player.isActivlyPlaying = false;
+                            return;
                         }
                     }
                 }
