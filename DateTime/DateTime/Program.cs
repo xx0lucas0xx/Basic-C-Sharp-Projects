@@ -10,6 +10,9 @@ namespace DateTime
     {
         static void Main(string[] args)
         {
+            //prints current date and time
+            DateTime currentDateTime = DateTime.Now;
+
         }
     }
 }
