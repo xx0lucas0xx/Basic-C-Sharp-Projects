@@ -12,7 +12,6 @@ namespace ClassesObjects
     {
         static void Main(string[] args)
         {
-            DateTime dateTime = new DateTime
             //asking initaial questions
             Console.WriteLine("Welcome to the Grand Hotel and Casino.\nLet's start by telling me your name.");
             string playerName = Console.ReadLine();

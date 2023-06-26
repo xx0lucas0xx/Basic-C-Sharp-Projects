@@ -22,8 +22,9 @@ namespace ClassesObjects
             Hand.Add(Deck.Cards.First());
             string card = string.Format(Deck.Cards.First().ToString() + "\n");
             Console.WriteLine(card);
-            using (StreamWriter file = new StreamWriter(@"C:\Users\spike\Documents\log.txt", true))
+            using (StreamWriter file = new StreamWriter(@"C:\Users\spike\OneDrive\Documents\log\log.txt", true))
             {
+                file.WriteLine(DateTime.Now);
                 file.WriteLine(card);
             }
             Deck.Cards.RemoveAt(0);
