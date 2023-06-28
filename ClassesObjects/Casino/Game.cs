@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassesObjects
+namespace Casino
 {
     //Base class, cannot be seen unless inherented
     public abstract class Game

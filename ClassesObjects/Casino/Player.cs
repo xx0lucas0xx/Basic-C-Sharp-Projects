@@ -4,10 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassesObjects
+namespace Casino
 {
     public class Player
     {
+        //auto assigns beginning Balance as 100 if one not stated
+        public Player(string name) : this(name, 100)
+        {
+        }
         public Player (string name, int beginningBalance)
         {
             Hand = new List<Card>();
@@ -20,7 +24,7 @@ namespace ClassesObjects
         public string Name { get; set; }
         public bool isActivlyPlaying { get; set; }
         public bool Stay { get; set; }
-
+        public Guid Id { get; set; }
         public bool Bet(int amount)
         {
             if (Balance - amount < 0)

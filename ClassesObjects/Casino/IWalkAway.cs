@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassesObjects
+namespace Casino
 {
     //naming conventions for interfaces should always start with I
     interface IWalkAway

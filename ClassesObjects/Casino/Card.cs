@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassesObjects
+namespace Casino
 {
    
     //changed to struct (can't inharent)
