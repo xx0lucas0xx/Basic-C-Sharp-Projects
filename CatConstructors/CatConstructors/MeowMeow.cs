@@ -44,7 +44,7 @@ namespace CatConstructors
             {
                 Console.WriteLine("Huh...No Judgment but that might be a few to many...");
             }
-            else if (cats > 0)
+            else if (cats == 0)
             {
                 Console.WriteLine("oh...okay that's a bit boring...you do you though...");
             }
