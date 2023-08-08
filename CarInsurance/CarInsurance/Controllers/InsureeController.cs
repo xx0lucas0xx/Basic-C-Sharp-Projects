@@ -20,6 +20,11 @@ namespace CarInsurance.Controllers
             return View(db.Insurees.ToList());
         }
 
+        public ActionResult Admin()
+        {
+            return View(db.Insurees.ToList());
+        }
+
         // GET: Insuree/Details/5
         public ActionResult Details(int? id)
         {
@@ -50,6 +55,7 @@ namespace CarInsurance.Controllers
         {
             if (ModelState.IsValid)
             {
+                insuree.Quote = CalculateQuote(insuree);
                 db.Insurees.Add(insuree);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -82,6 +88,7 @@ namespace CarInsurance.Controllers
         {
             if (ModelState.IsValid)
             {
+                insuree.Quote = CalculateQuote(insuree);
                 db.Entry(insuree).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -124,23 +131,76 @@ namespace CarInsurance.Controllers
             base.Dispose(disposing);
         }
 
-        //calculates quote based on age
-        public ActionResult CalculateQuote(int age)
+        //calculates quote based on age, make, model, and tickets recived
+        public decimal CalculateQuote(Insuree insuree)
         {
-            int baseQuote = 50;
+            decimal baseQuote = 50;
+            int age = (DateTime.Now - insuree.DateOfBirth).Days / 365;
 
             if (age <= 18)
             {
                 baseQuote += 100;
             }
-            else if (age >= 19 && age <= 25)
+            else if (age <= 25)
             {
-                baseQuote +=  50;
+                baseQuote += 50;
             }
             else
             {
                 baseQuote += 25;
             }
+            ////Calculates quote based on age
+            //if (insuree.DateOfBirth <= DateTime.Now.AddYears(18))
+            //{
+            //    baseQuote += 100;
+            //}
+            //else if (insuree.DateOfBirth <= DateTime.Now.AddYears(25))
+            //{
+            //    baseQuote +=  50;
+            //}
+            //else
+            //{
+            //    baseQuote += 25;
+            //}
+
+            //calculates quote based on caryear
+            if (insuree.CarYear < 2000)
+            {
+                baseQuote += 25;
+            }
+            else if (insuree.CarYear > 2015)
+            {
+                baseQuote += 25;
+            }
+            
+            //calculates quote to add more to fancy cars
+            if (insuree.CarMake.ToLower() == "porsche")
+            {
+                baseQuote += 25;
+
+                if (insuree.CarModel.ToLower() == "911 carrara")
+                {
+                    baseQuote += 25;
+                }
+            }
+
+            //calculates quote to see if user has any tickets
+            baseQuote += insuree.SpeedingTickets * 10;
+
+            if (insuree.DUI)
+            {
+                //Adds 25% for DUI
+                baseQuote *= 1.25m;
+            }
+
+            if (insuree.CoverageType)
+            {
+                //Adds 50% for total coverage
+                baseQuote *= 1.5m;
+            }
+
+            insuree.Quote = baseQuote;
+            return insuree.Quote;
         }
     }
 }
