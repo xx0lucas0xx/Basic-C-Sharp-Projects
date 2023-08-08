@@ -135,6 +135,8 @@ namespace CarInsurance.Controllers
         public decimal CalculateQuote(Insuree insuree)
         {
             decimal baseQuote = 50;
+
+            //calculates quote based on age
             int age = (DateTime.Now - insuree.DateOfBirth).Days / 365;
 
             if (age <= 18)
@@ -149,19 +151,6 @@ namespace CarInsurance.Controllers
             {
                 baseQuote += 25;
             }
-            ////Calculates quote based on age
-            //if (insuree.DateOfBirth <= DateTime.Now.AddYears(18))
-            //{
-            //    baseQuote += 100;
-            //}
-            //else if (insuree.DateOfBirth <= DateTime.Now.AddYears(25))
-            //{
-            //    baseQuote +=  50;
-            //}
-            //else
-            //{
-            //    baseQuote += 25;
-            //}
 
             //calculates quote based on caryear
             if (insuree.CarYear < 2000)
