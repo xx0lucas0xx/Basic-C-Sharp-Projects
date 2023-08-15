@@ -7,7 +7,7 @@ namespace Scores
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter in your first name.");
-            string date = DateTime.ToShortDateString();
+            string date = DateTime.Today.ToShortDateString();
             string uName = Console.ReadLine();
             string msg = $"\nWelcome back {uName}. Today is {date}.";
 
@@ -29,7 +29,7 @@ namespace Scores
             Console.WriteLine("\nTotal of " + lines.Length + " student scores. \tAverage score: " + avgScore);
 
             Console.WriteLine("\n\nPress any key to exit.");
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }
