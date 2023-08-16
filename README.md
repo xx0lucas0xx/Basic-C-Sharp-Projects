@@ -43,9 +43,33 @@ console app, which uses a number class to complete math equation.
 # CallingMehtods5
 console app, uses user input and performs math equations.
 
+# CallingMethods7
+console app, creates a list of employees and sorts them based on various conditions
 
+# CarInsurance
+MVC ASP.NET, sees if user is eligible for car insurance and how much it would cost
 
+# CatConstructors
+console app, asks the user questions about cats
 
+# ClassesObjects
+console app, a playable card game TwentyOneGame
+
+# Code-First
+using a code first approach to data management
+
+# ConsoleArray
+console app, asks user for number input that picks from an option in the array and displays it
+to the user
+
+# CurrentDate
+console app, prints the current date and does a math equation including the users int input
+
+# DailyRepo
+console app, asks the user questions about their work day.
+
+# ExceptionHandling
+console app, practices using error handilng 
 
 
 
