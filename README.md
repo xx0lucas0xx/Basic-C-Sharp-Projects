@@ -71,8 +71,8 @@ console app, asks the user questions about their work day.
 # ExceptionHandling
 console app, practices using error handling 
 
-# iteration
-
+# Loops
+console app, goes through number loop using input from the user
 
 
 
