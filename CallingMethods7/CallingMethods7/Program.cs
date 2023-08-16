@@ -25,16 +25,6 @@ namespace CallingMethods7
                 new Employee { ID = 10, FirstName = "Karen", LastName = "Wilson" }
             };
 
-            //creates a new list of employees with the first name joe
-            //List<Employee> joes = new List<Employee>();
-            //foreach (Employee employee in employees)
-            //{
-            //    if (employee.FirstName == "Joe")
-            //    {
-            //        joes.Add(employee);
-            //    }
-            //}
-
             //creates a new list of employees with the first name joe in form of lambda expression
             List<Employee> joes = employees.Where(x => x.FirstName == "Joe").ToList();
 
