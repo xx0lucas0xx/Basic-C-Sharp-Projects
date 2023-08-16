@@ -71,9 +71,17 @@ console app, asks the user questions about their work day.
 # ExceptionHandling
 console app, practices using error handling 
 
+# MVCtutorial
+basic intro using MVC model
+
+# ParsingEnums
+console app, goes through Enums based on user input
+
 # Loops
 console app, goes through number loop using input from the user
 
+# VariablesAndDataTypes
+console app, using different data types and displaying them.
 
 
 
