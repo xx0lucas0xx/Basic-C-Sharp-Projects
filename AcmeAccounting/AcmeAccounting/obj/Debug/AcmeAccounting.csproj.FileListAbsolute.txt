@@ -4,3 +4,10 @@ c:\users\spike\source\repos\AcmeAccounting\AcmeAccounting\bin\Debug\AcmeAccounti
 c:\users\spike\source\repos\AcmeAccounting\AcmeAccounting\obj\Debug\AcmeAccounting.csproj.CoreCompileInputs.cache
 c:\users\spike\source\repos\AcmeAccounting\AcmeAccounting\obj\Debug\AcmeAccounting.exe
 c:\users\spike\source\repos\AcmeAccounting\AcmeAccounting\obj\Debug\AcmeAccounting.pdb
+C:\Users\spike\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\AcmeAccounting\AcmeAccounting\bin\Debug\AcmeAccounting.exe.config
+C:\Users\spike\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\AcmeAccounting\AcmeAccounting\bin\Debug\AcmeAccounting.exe
+C:\Users\spike\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\AcmeAccounting\AcmeAccounting\bin\Debug\AcmeAccounting.pdb
+C:\Users\spike\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\AcmeAccounting\AcmeAccounting\obj\Debug\AcmeAccounting.csprojAssemblyReference.cache
+C:\Users\spike\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\AcmeAccounting\AcmeAccounting\obj\Debug\AcmeAccounting.csproj.CoreCompileInputs.cache
+C:\Users\spike\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\AcmeAccounting\AcmeAccounting\obj\Debug\AcmeAccounting.exe
+C:\Users\spike\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\AcmeAccounting\AcmeAccounting\obj\Debug\AcmeAccounting.pdb
