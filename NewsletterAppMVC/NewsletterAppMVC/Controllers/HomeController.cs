@@ -48,7 +48,7 @@ namespace NewsletterAppMVC.Controllers
                     command.ExecuteNonQuery();
                     connection.Close();
                 }
-                return View("Succss");
+                return View("Success");
             }
         }
 
@@ -60,6 +60,8 @@ namespace NewsletterAppMVC.Controllers
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(queryString, connection);
+
+                connection.Open();
 
                 SqlDataReader reader = command.ExecuteReader();
 
@@ -80,11 +82,11 @@ namespace NewsletterAppMVC.Controllers
                 var signupVm = new signupVm();
                 signupVm.FirstName = signup.FirstName;
                 signupVm.LastName = signup.LastName;
-                signupVm.EmailAddress = signup.EmailAddress
-
+                signupVm.EmailAddress = signup.EmailAddress;
+                signupVms.Add(signupVm);
             }
 
-                return View(signups);
+             return View(signupVms);
         }
     }
 }
