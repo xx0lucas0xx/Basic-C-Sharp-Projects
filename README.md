@@ -1,7 +1,7 @@
 # Basic-C-Sharp-Projects
 a list of the projects in this repo and basic information about them
 
-# 6partArrayLoop
+  6partArrayLoop
 console app, runs different types of loops, asked for user input
 
 # AcmeAccounthing
